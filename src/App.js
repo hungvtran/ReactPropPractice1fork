@@ -1,5 +1,5 @@
 import React from "react";
-//import ContactCard from "./ContactCard";
+import ContactCard from "./ContactCard";
 import catData from "./catData";
 
 function App() {
@@ -10,30 +10,22 @@ function App() {
   const double = nums.map(num => num * 2);
   console.log(double);
 
-  function Cats() {
-
-  return (catData.map(cat => {
-    {
-      cat.imgUrl;
-    }
-    {
-      cat.name;
-    }
-    Phone: {
-      cat.phone;
-    }
-    Email: {
-      cat.email;
-    }
-//end map, end catInfo function
-)}
-)
-                  }
-  return (
-    <div className="contacts">
-      <cats />
-    </div>
-  );
+  const cats = {catData.map(cat => {
+      {
+        cat.imgUrl;
+      }
+      {
+        cat.name;
+      }
+      Phone: {
+        cat.phone;
+      }
+      Email: {
+        cat.email;
+      }
+      //end cat function, end map
+    })}
+  return <div className="contacts">{cats}</div>;
 }
 
 export default App;

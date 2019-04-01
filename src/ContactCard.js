@@ -1,5 +1,5 @@
 import React from "react";
-/*
+
 function ContactCard(props) {
   console.log(props);
   return (
@@ -13,4 +13,3 @@ function ContactCard(props) {
 }
 
 export default ContactCard;
-*/
